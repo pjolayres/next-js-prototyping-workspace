@@ -1,4 +1,7 @@
-module.exports = {
+const withSass = require('@zeit/next-sass');
+
+module.exports = withSass({
+  cssModules: true,
   webpack: config => {
     // Fixes npm packages that depend on `fs` module
     config.node = {
@@ -7,4 +10,4 @@ module.exports = {
 
     return config
   }
-}
+});

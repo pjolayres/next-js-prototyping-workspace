@@ -1,0 +1,17 @@
+@import "../../assets/scss/global";
+
+.scss {
+    pointer-events: auto;
+
+    .red {
+        color: red;
+    }
+
+    .leftMargin {
+        margin-left: 50px;
+    }
+
+    .invariantLeftMargin {
+        margin-left: 50px #{"/* rtl:ignore */"};
+    }
+}

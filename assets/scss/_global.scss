@@ -1,0 +1,10 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}

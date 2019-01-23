@@ -3,7 +3,7 @@ import axios from 'axios';
 import Head from '../components/head'
 import Nav from '../components/nav'
 
-export default class Inner extends Component {
+export default class Data extends Component {
     static async getInitialProps({ req }) {
         const id = req.query.id || 1;
 
@@ -92,40 +92,12 @@ export default class Inner extends Component {
                     )}
                 </div>
                 <style jsx>{`
-                    .container {
-                        pointer-events: auto;
-                    }
-    
-                    .loader {
-                        pointer-events: auto;
-                    }
-    
-                    .dataView {
-                        pointer-events: auto;
-                    }
-    
                     .dataView-label {
                         font-weight: bold;
-                    }
-    
-                    .dataView-value {
-                        pointer-events: auto;
-                    }
-
-                    .user {
-                        pointer-events: auto;
-                    }
-
-                    .user-info {
-                        pointer-events: auto;
                     }
 
                     .user-info dt {
                         font-weight: bold;
-                    }
-
-                    .user-info dd {
-                        pointer-events: auto;
                     }
                     `}</style>
             </div>
