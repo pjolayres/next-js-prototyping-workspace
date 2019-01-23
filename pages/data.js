@@ -4,8 +4,8 @@ import Head from '../components/head'
 import Nav from '../components/nav'
 
 export default class Data extends Component {
-    static async getInitialProps({ req }) {
-        const id = req.query.id || 1;
+    static async getInitialProps({ query }) {
+        const id = query.id || 1;
 
         try {
             const result = await axios.get(`https://reqres.in/api/users/${id}`);
