@@ -11,6 +11,7 @@
     "axios": "^0.18.0",
     "express": "^4.16.4",
     "next": "7.0.2",
+    "next-i18next": "^0.20.0",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "pixrem": "^5.0.0",

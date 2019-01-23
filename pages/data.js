@@ -4,14 +4,15 @@ import Head from '../components/head'
 import Nav from '../components/nav'
 
 export default class Data extends Component {
-    static async getInitialProps({ query }) {
-        const id = query.id || 1;
+    static async getInitialProps({ req, query }) {
+        const id = req.query.id || query.id || 1;
 
         try {
             const result = await axios.get(`https://reqres.in/api/users/${id}`);
 
             return {
-                user: result.data.data
+                user: result.data.data,
+                namespacesRequired: ['common']
             };
         }
         catch (ex) {

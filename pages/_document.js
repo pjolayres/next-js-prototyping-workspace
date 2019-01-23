@@ -3,24 +3,20 @@ import Document, { Head, Main, NextScript } from 'next/document'
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
         const initialProps = await Document.getInitialProps(ctx)
-        const lang = 'en';
-        const dir = 'ltr';
 
         return {
-            ...initialProps,
-            lang,
-            dir
+            ...initialProps
         }
     }
 
     render() {
-        const { lang, dir } = this.props;
+        const rtlLanguageCodes = ['ar', 'dv', 'fa', 'ha', 'he', 'khw', 'ks', 'ku', 'ps', 'ur', 'yi'];
+        const lang = (this.props.__NEXT_DATA__.props.initialLanguage || 'en').trim();
+        const dir = !!rtlLanguageCodes.find(culture => lang.startsWith(culture)) ? 'rtl' : 'ltr';
 
         return (
             <html lang={lang} dir={dir}>
-                <Head>
-                    <title>My page</title>
-                </Head>
+                <Head />
                 <body className="custom_class">
                     <Main />
                     <NextScript />

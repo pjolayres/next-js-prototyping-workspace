@@ -88,4 +88,8 @@ const Home = () => (
   </div>
 )
 
+Home.getInitialProps = ({ res, err }) => ({
+  namespacesRequired: ['common']
+});
+
 export default Home
