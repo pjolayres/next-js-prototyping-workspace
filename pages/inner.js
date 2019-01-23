@@ -81,6 +81,8 @@ export default class Inner extends Component {
                         <div className="user">
                             {user.avatar && <img src={user.avatar} alt={`${user.first_name} ${user.last_name}`}></img>}
                             <dl className="user-info">
+                                <dt>ID: </dt>
+                                <dd>{user.id}</dd>
                                 <dt>First name: </dt>
                                 <dd>{user.first_name}</dd>
                                 <dt>Last name: </dt>
