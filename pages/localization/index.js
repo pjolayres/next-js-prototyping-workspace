@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Head from '../../components/head';
-import { withNamespaces } from '../../common/js/utils/localization';
+import Head from '../../components/common/head';
+import { withNamespaces } from '../../src/common/utils/localization';
 
 const LocalizationPage = ({ t }) => (
     <div>

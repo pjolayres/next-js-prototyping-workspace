@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import Head from '../../components/head'
-import Nav from '../../components/nav'
+import Head from '../../components/common/head'
+import Nav from '../../components/client/nav'
 import styles from './style.scss'
 
 const ScssPage = () => (

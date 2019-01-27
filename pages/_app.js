@@ -1,6 +1,6 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import { appWithTranslation } from '../common/js/utils/localization';
+import { appWithTranslation } from '../src/common/utils/localization';
 
 class MyApp extends App {
   render() {

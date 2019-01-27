@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from '../components/common/head'
-import Nav from '../components/client/nav'
+import Head from '../../components/common/head'
+import Nav from '../../components/client/nav';
 
 const Home = () => (
   <div>

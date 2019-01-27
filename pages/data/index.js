@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Head from '../components/head'
-import Nav from '../components/nav'
+import Head from '../../components/common/head'
+import Nav from '../../components/client/nav'
 
 export default class Data extends Component {
     static async getInitialProps({ req, query }) {
