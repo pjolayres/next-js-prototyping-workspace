@@ -10,6 +10,7 @@
 /build
 /dist
 /.next
+/.server
 
 # misc
 .DS_Store

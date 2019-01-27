@@ -1,7 +1,7 @@
-const express = require('express');
-const next = require('next');
-const nextI18NextMiddleware = require('next-i18next/middleware');
-const localization = require('../common/utils/localization');
+import express from 'express';
+import next from 'next';
+import nextI18NextMiddleware from 'next-i18next/middleware';
+import localization from '../common/utils/localization';
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
