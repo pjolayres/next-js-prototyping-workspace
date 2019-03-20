@@ -39,7 +39,8 @@
                 "res",
                 "response",
                 "$scope",
-                "staticContext"
+                "staticContext",
+                "config"
             ]
         }]
     }

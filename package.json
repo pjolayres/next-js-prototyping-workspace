@@ -4,7 +4,8 @@
     "dev": "shx --silent rm -rf .server && babel src --out-dir .server --source-maps && node server.js",
     "build": "shx --silent rm -rf .server && babel src --out-dir .server && next build",
     "start": "NODE_ENV=production node server.js",
-    "lint": "node_modules/.bin/eslint ./src --fix"
+    "lint": "node_modules/.bin/eslint ./src --fix",
+    "prettier": "prettier --write '**/*.js'"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
