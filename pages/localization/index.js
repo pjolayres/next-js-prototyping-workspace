@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Head from '../../components/common/head';
 import { withNamespaces } from '../../src/common/utils/localization';
 
 const LocalizationPage = ({ t }) => (
-    <div>
-        <Head title={t('Title')} />
-        <h1>{t('Title')}</h1>
-    </div>
+  <div>
+    <Head title={t('Title')} />
+    <h1>{t('Title')}</h1>
+  </div>
 );
 
 LocalizationPage.getInitialProps = ({ res, err }) => ({
